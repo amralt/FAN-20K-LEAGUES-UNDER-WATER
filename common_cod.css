@@ -1,0 +1,453 @@
+*{
+	font-family: Trebuchet MS, sans-serif;
+}
+
+.navnavnav{
+	display:none;
+	width: 300px;
+	border-radius:none;
+	position:absolute;
+	left: -70px;
+	/* background-color: rgba(224, 192, 142, 0.8); */
+	list-style-type: none;	
+}
+
+.nav>ul>li{
+	float:left;
+	border-radius:0px;
+	background-color: transparent;
+	position: relative;
+	display: block;
+	
+}
+
+.nav>ul{
+	list-style-type: none;
+	border-radius: 0px;
+	z-index:50;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 72pt;
+	display: flex;
+}
+
+.nav>ul>li:hover ul{
+	display: block;
+}
+
+#nav_button1{
+	display: block;
+}
+
+.nav button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: block;
+	background-position: 0;
+    height: 72pt;
+    width: 120pt;
+    clip-path: circle(35%);
+    transition: 0.5s;
+	cursor: pointer;
+	animation: move_color 2s 3 alternate;
+}
+
+@keyframes move_color{
+	
+	100%{
+		background-position: 0 200px;
+	}
+}
+
+.nav span{    
+    font-size: 0px;
+    color: rgba(199, 23, 23, 1);
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+	margin-top: 70px;
+}
+
+.navnav>li:hover button{
+    transition: 0.5s;
+    clip-path: circle(100%);
+    /* background: rgba(226, 180, 138, 0.925); */
+	border-radius: 10% 10% 0 0 ;
+}
+
+.navnav>li:hover span{
+    transition: 0.5s;
+    font-size: 15px;
+	text-transform: uppercase;
+    color: purple;
+    transform: rotate(360deg) translateX(2em);
+}
+.open{
+	border: 5px solid red;
+}
+
+ul>li:hover .nav_pic{
+	 display: none;
+}
+
+.nav_pic{
+	width: 65px;
+    position: absolute;
+    left: 48px;
+}
+
+#Nautilius .nav_pic{
+	width: 80px;
+    left: 40px;
+}
+/*лок в которам находится .nav */
+.blocknav{
+	cursor: pointer;
+	/* background-color: rgba(224, 192, 142, 0.9); */
+	text-align: center;
+	height: 72pt;
+	min-width: 100%;
+	z-index: 160;
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+}
+
+a li{
+	margin:15px;
+}
+
+.nav>li:hover ul{
+	/* background-color: rgba(41, 70, 74, 0.74); */
+}
+
+.nav>li:hover {
+	/* background-color:#696969; */
+}
+/*преолайдер*/
+.preloader-remove{
+	display: none;
+	z-index: -100;
+	opacity: 0;
+}
+
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+  
+  
+}
+
+
+@keyframes wave {
+    0% {
+        border-radius: 25%;
+    }
+    100% {
+        border-radius: 50%;
+    }
+}
+
+@keyframes wave-after {
+    0% {
+		transform: translateX(-155px);
+        border-radius: 25%;
+        left: -50px;
+    }
+    100% {
+        border-radius: 50%;
+        left: -32px;
+		transform: translateX(-138px);
+    }
+}
+
+@keyframes wave-before {
+    0% {
+        border-radius: 25%;
+        left: 44px;
+		transform: translateX(155px);
+    }
+    100% {
+        border-radius: 50%;
+        left: 30px;
+		transform: translateX(134px);
+    }
+}
+
+@keyframes ocean {
+    0% {
+        top: 0;
+    }
+	90%{
+		background: #26C6DA;
+	}
+    100% {
+		background: transparent;
+    }
+}
+
+@keyframes submarina_move{
+	20%{
+		  filter: opacity(100%);
+		  transform: translateY(30px);
+	}
+	
+	80%{
+		transform: translateY(-70px);
+	}
+	100%{
+		filter: opacity(100%);
+		transform: translateY(-80px);
+	}
+}
+
+#submarina{
+	width: 250px;
+	animation: submarina_move 2.5s 1 ease-in;
+	animation-fill-mode:forwards;
+}
+
+.loader {
+    position: absolute;
+    left: 0px;
+    width: 35%;
+    height: 10%;
+    animation: ocean 0.5s infinite alternate ease-in-out;
+	background: #26C6DA;
+	width: 100%;
+	height: 100%;
+	display: grid;/*риды вещь реально полезная, можешь поменять параметры в кансоле разработчика браузера*/
+	align-items: start;
+    justify-content: center;
+    align-content: center;
+}
+
+.loading,
+.loading:after,
+.loading:before {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-bottom-color: #0097A7;
+    box-sizing: border-box;
+	z-index: 15;
+}
+
+.preloader{
+	 background: #26C6DA;
+}
+
+.loading {
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+    animation: wave 1.1s infinite alternate ease-in-out;
+}
+
+.loading:after,
+.loading:before {
+    position: absolute;
+    content: "";
+    displsy: block;
+    top: -3px;
+}
+
+.loading:after {
+    left: -240px;
+    animation: wave-after 1.1s infinite alternate ease-in-out;
+}
+
+.loading:before {
+    left: 240px;
+    animation: wave-before 1.1s infinite alternate ease-in-out;
+}
+.preloader-remove{
+	display: none;
+}
+#skip_preolader{
+	width: 25%;
+	height: 10%;
+	border: 5px solid #ff4747;
+	background-color: #3ef4f9c4;
+	border-radius: 10%;
+}
+#skip_preolader:hover .preloader{
+	background-color: red;
+}
+/*подвал*/
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: rgba(52, 52, 52, 1);
+	min-width: 100%;	
+	z-index: 10;
+	color: white;
+	position: absolute;
+	left: 0;
+}
+
+/*оооваоваовоавоа 
+
+сейчас будем исправлять багги
+
+*/
+
+@media all and (max-width: 580px){
+	
+	#nav_button1{
+		display: block;
+	}
+}
+
+
+@media all and (max-width: 580px){
+	
+	
+	#nav_button1{
+		display: block;
+	}
+	.loading,
+	.loading:after,
+	.loading:before {
+		width: 120px;
+		height: 120px;
+	}
+	
+	#submarina{
+		width: 200px;
+	}
+	@keyframes wave-after {
+    0% {
+		transform: translateX(-55px);
+        border-radius: 25%;
+        left: -50px;
+    }
+    100% {
+        border-radius: 50%;
+        left: -32px;
+		transform: translateX(-54px);
+    }
+}
+
+@keyframes wave-before {
+    0% {
+        border-radius: 25%;
+        left: 44px;
+		transform: translateX(54px);
+    }
+    100% {
+        border-radius: 50%;
+        left: 30px;
+		transform: translateX(48px);
+    }
+}
+
+}
+
+@media all and (max-width: 1301px){
+	#ulcharecters{
+		left: 0;
+	}
+	#ulOthers_films{
+		left: -140px;
+	}
+	
+}
+
+@media (max-width: 816px){
+	
+	.infblock img{
+		margin: 3% 0;
+	}
+	
+	.nav>ul{
+		display: none;
+		position: relative;
+		height: 0;
+		/* background-color: rgba(254, 209, 150, 0.8); */
+		width: 100%;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: stretch;
+		justify-content: flex-start;
+	}
+	.nav{
+		width: 72pt;
+		height: 72pt;
+		background:  url(pic/pic_nav.png);
+		background-size: 100%;
+	}
+	
+	.nav:hover{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-image: none;
+	}
+	
+	.nav:hover .navnav{
+		display: inline-flex;
+	}
+	.navnav>li{
+		width:120pt;
+	}
+	.navnav>li:hover{
+		width: calc(100%);
+	}	
+	.navnavnav{
+		left: 160px;
+		top: 0%;
+		display: none;
+		width: calc(100% - 160px);
+		z-index: 100;
+	}
+	
+	.nav>.navnav>li{
+		margin: 10pt 0;
+	}
+	#ulcharecters, #ulOthers_films{
+		left: 160px;
+	}
+	.navnav>li:hover button{
+		border-radius: 10% 0 0 10%;
+	}
+	
+	#film_chronology{
+		display: none;
+	}
+		
+	.navnav:before{
+		content:"";
+		display:block;
+		width: 160px;
+		height: 1000px;
+		position: absolute;
+		left: 0px;
+		background-color: transparent;
+	}
+
+	.navnav:hover .navnavnav{
+		z-index: 501;
+	}
+	
+
+}
+
+

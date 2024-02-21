@@ -1,0 +1,544 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Trebuchet MS, sans-serif;
+}
+body{
+	background-color: black;
+	min-height: 100%;
+}
+
+.all{
+	position: relative;
+	min-height: 100%;
+}
+
+p { 
+	margin-top: 10; 
+	text-align: justify;
+	}
+h3 { 
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	transition: 0.5s;
+	}
+
+
+/*вылезающий подсписок весь код в common_cod здесь только цвета*/
+.navnavnav{
+	background-color: rgba(41, 70, 74, 0.74);
+}
+
+.nav button{
+    background-color: rgba(139, 195, 202, 1);	
+}
+
+.navnav>li:hover button{
+    background-color: rgba(139, 195, 202, 1);
+}
+
+.navnav>li:hover span{
+	background-color: rgba(139, 195, 202, 1);
+}
+
+.blocknav{
+	background-color: rgba(41, 70, 74, 0.74);
+}
+
+.nav>li:hover ul{
+	background-color: rgba(41, 70, 74, 0.74);
+}
+.nav{
+	background-color: rgba(41, 70, 74, 0.74);
+}
+.nav>li:hover {
+	background-color:#696969;
+}
+/* .what_is_this_page{
+	background-color: black;
+} */
+.i_want_refuse_color>img:hover{
+	filter: contrast(100%)  invert(75%) sepia(600%);
+	transition: 1.5s;
+	
+}
+.footer{
+	top: 90%;		
+}
+
+.footer *{
+	padding: 5PX;		
+}
+
+.article *{
+	/* border: 1px solid red; */
+}
+
+.article{
+	position: absolute;
+	top: 0;
+	left:0;
+	width:100%;
+	height: 100%;
+	
+}
+
+.blocksubmarine{
+	width: 1001px;
+    height: 682px;
+    position: absolute;
+    top: 34px;
+	left: 0;
+}
+
+#blocksubmarine{
+	top: calc(50% - 375px);
+	left: calc(50% - 500px);
+	position: absolute;
+	top: 10%;
+	width:1000px;
+	height: 750px;
+	/* background: url(pic/art-nautilus.jpg) no-repeat ; */
+	background-position: 00px;
+	background-size: 100%;
+}
+/* @keyframes part_submarine_animation{ */
+	/* 0%{ */
+		/* filter: contrast(60%) hue-rotate(30deg); */
+	/* } */
+	/* 50%{ */
+		/* filter:contrast(100%) hue-rotate(0deg); */
+	/* } */
+	/* 100%{ */
+		/* filter:contrast(60%) hue-rotate(30deg); */
+	/* } */
+/* } */
+.part_nautilius{
+	position: absolute;
+	display: block;
+	/* animation: part_submarine_animation 5s infinite; */
+	/* display: none; */
+}
+#part_nautilius1{
+	top: 291px;
+    left: 587px;
+    z-index: 101;
+	width: 268px;
+}
+
+#part_nautilius2{
+	    top: 380px;
+    left: 269px;
+    z-index: 102;
+    width: 318px;
+    height: 110px;
+}
+
+#part_nautilius4{
+	top: 312px;
+    left: 40px;
+    z-index: 103;
+    width: 229px;
+    height: 153px;
+}
+
+#part_nautilius3{
+	    top: 242px;
+    left: 254px;
+    z-index: 104;
+    width: 335px;
+    height: 133px;
+}
+
+
+.what_it{
+	display: none;
+	position: absolute;
+	background-color: rgba(52, 52, 52, 1);
+    z-index: 1000;
+	padding: 2%;
+	border-radius: 10%;
+}
+#what_it1{
+	top: 50%;
+    left: 60%;
+}
+#what_it2{
+	top: 58%;
+    left: 32%;
+}
+#what_it3{
+	top: 45%;
+    left: 32%;
+}
+#what_it4{
+	top: 50%;
+    left: 5%;
+}
+a:hover .what_it{
+	display: block;
+} 
+.part_nautilius:hover {
+	transition: 1s;
+} 
+@keyframes part_submarine_animation_1{
+	0%{
+		filter: drop-shadow(0px 0px 0px black) saturate(100%) saturate(100%) contrast(100%); 
+	}
+	50%{
+		filter: drop-shadow(16px 16px 25px black) saturate(150%) saturate(150%) contrast(130%); 
+	}
+	100%{
+		filter: drop-shadow(0px 0px 0px black) saturate(100%) saturate(100%) contrast(100%); 
+	}
+}
+#part_nautilius1 {
+	animation: part_submarine_animation_1 5s infinite;
+	/* filter: drop-shadow(16px 16px 10px black) saturate(150%) saturate(150%) contrast(130%); */
+}
+@keyframes part_submarine_animation_2{
+		0%{
+		filter: drop-shadow(0px 0px 0px black) saturate(100%) saturate(100%) contrast(100%); 
+	}
+	50%{
+		filter: drop-shadow(1px 16px 25px black) saturate(150%) saturate(150%) contrast(130%); 
+	}
+	100%{
+		filter: drop-shadow(0px 0px 0px black) saturate(100%) saturate(100%) contrast(100%); 
+	}	
+}
+#part_nautilius2{
+	animation: part_submarine_animation_2 5s infinite;
+	/* filter: drop-shadow(1px 16px 10px black) saturate(150%) saturate(150%) contrast(130%); */
+}
+@keyframes part_submarine_animation_3{
+		0%{
+		filter: drop-shadow(0px 0px 0px black) saturate(100%) saturate(100%) contrast(100%); 
+	}
+	50%{
+		filter: drop-shadow(0px -6px 25px black) saturate(150%) saturate(150%) contrast(130%); 
+	}
+	100%{
+		filter: drop-shadow(0px 0px 0px black) saturate(100%) saturate(100%) contrast(100%); 
+	}	
+}
+#part_nautilius3{
+	animation: part_submarine_animation_3 5s infinite;
+	/* filter: drop-shadow(0px -6px 10px black) saturate(150%) saturate(150%) contrast(130%); */
+}
+@keyframes part_submarine_animation_4{
+		0%{
+		filter: drop-shadow(0px 0px 0px black) saturate(100%) saturate(100%) contrast(100%); 
+	}
+	50%{
+		filter: drop-shadow(-16px 16px 25px black) saturate(150%) saturate(150%) contrast(130%); 
+	}
+	100%{
+		filter: drop-shadow(0px 0px 0px black) saturate(100%) saturate(100%) contrast(100%); 
+	}	
+}
+#part_nautilius4{
+	animation: part_submarine_animation_4 5s infinite;
+	/* filter: drop-shadow(-16px 16px 10px black) saturate(150%) contrast(130%); */
+	/* display: none; */
+}
+
+#submarine_next{
+	padding: 15px;
+	background-color:rgba(41, 70, 74, 0.9);
+	top: 65pt;
+	position: fixed;
+	color: white;
+	border-radius: 0 0 50% 0;
+}
+
+/*тут начинаются пузырики*/
+
+.container_buble{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	
+	/* display: none; */
+}
+
+.buble {
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	z-index: 110;
+}
+
+.buble:after{
+	content:"";
+	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%);
+}
+
+.container_buble div{
+	border-radius: 50%;
+	width: max(60px);
+	height: max(60px);	
+	border: 2px solid ;
+	animation: 4s linear infinite;
+	position: absolute;
+	top: 15%;
+	left: 5%;
+	border: 1px solid rgba(231, 255, 255, 1);
+}
+
+.buble .dot{
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	border: 1px solid rgba(231, 255, 255, 1);
+	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+}
+
+.bublsbreak:checked{
+	border: 10px solid black;
+}
+
+.container_buble div:nth-child(1){
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	animation: animate 10s linear infinite;
+}
+
+.container_buble div:nth-child(2){
+	position: absolute;
+	top: 30%;
+	left: 22%;
+	animation: animate 5s linear infinite;
+}
+
+.container_buble div:nth-child(3){
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	animation: animate 8s linear infinite;
+}
+
+.container_buble div:nth-child(4){
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	animation: animate 12s linear infinite;
+}
+
+.container_buble div:nth-child(5){
+	position: absolute;
+	top: 90%;
+	left: 70%;
+	animation: animate 10s linear infinite;
+}
+
+.container_buble div:nth-child(6){
+	top: 45%;
+	left: 90%;
+	animation: animate 3s linear infinite;
+}
+
+.container_buble div:nth-child(7){
+	top: 25%;
+	left: 60%;
+	animation: animate 7s linear infinite;
+}
+
+.container_buble div:nth-child(8){
+	top: 55%;
+	left: 30%;
+	animation: animate 18s linear infinite;
+}
+
+.container_buble div:nth-child(9){
+	top: 60%;
+	left: 80%;
+	animation: animate 18s linear infinite;
+}
+
+.container_buble div:nth-child(10){
+	top: 90%;
+	left: 30%;
+	animation: animate 18s linear infinite;
+}
+
+.container_buble div:nth-child(11){
+	top: 40%;
+	left: 10%;
+	animation: animate 8s linear infinite;
+}
+
+@keyframes animate{
+	0%{
+		transform: translateY(0) rotate(150deg);
+	}
+	
+	25%{
+		transform: scale(1.3) translateY(-50px) translateX(-20px) rotate(130deg);
+	}
+	
+	50%{
+		transform: scale(1.3) translateY(-100px) translateX(0%) rotate(150deg);
+	}
+	
+	75%{
+		transform: scale(1.3) translateY(-150px) translateX(20px) rotate(130deg);
+	}
+	
+	100%{
+		transform: scale(1.3) translateY(-200px) translateX(0%) rotate(150deg);
+	}
+}
+
+/*тут заканчиваются пузырики*/
+
+
+
+
+#charectersblock{
+	position:relative;
+	top:37%;
+	left:6%;
+	opacity:0.1;
+	width:50%;
+	height:16%;
+	background-color:red;
+	z-index: 100;
+}
+
+#charectersblock:hover{
+	box-shadow: inset 0 0 6px red;
+	opacity:0.3;
+}
+
+#smartphone{
+	display: none;
+	
+}
+#blocksubmarine2{
+		display: none;
+	}
+
+@media all and (max-width: 580px){
+	
+	#nav_button1{
+		display: block;
+	}
+}
+
+
+
+@media (max-width: 630px){
+	
+	.nav>ul{
+		background-color: rgba(254, 209, 150, 0.8);
+	}
+}
+/* and max-width:710px */
+
+@media all and (max-height: 750px) and (orientation:landscape){
+	/* *{ */
+		/* border: 1px solid red; */
+	/* } */
+	#blocksubmarine{
+		
+		width: 700px;
+		height: auto;
+		left: calc(50% - 350px);
+		margin: 0 auto;
+	}
+	.blocknav, .footer{
+		width: auto;
+	}
+		.blocksubmarine {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 34px;
+	/* left: 6%; */
+	margin: 0 auto;
+	}
+	#part_nautilius2 {
+		top: 257px;
+		left: 202px;
+		width: 246px;
+		height: 83px;
+	}
+	#part_nautilius3 {
+		    left: 188.5px;
+		top: 152px;
+		width: 260px;
+		height: 100px;
+		/* height: 131px; */
+	}
+	#part_nautilius4 {
+		left: 33px;
+		width: 167px;
+		top: 203px;
+		height: 118px;
+	}
+	#part_nautilius1 {
+		left: 448px;
+		top: 191px;
+		width: 202px;
+		
+	}
+	.footer{
+		top: 420px;
+	}
+	#blocksubmarine2{
+		display: block;
+	}
+	#blocksubmarine1{
+		display: none;
+	}
+}
+
+@media (max-width: 800px){
+	
+	.nav>ul{
+		background-color: rgba(254, 209, 150, 0.8);
+	}
+	
+}
+
+
+@media all and (max-width: 610px)  and (orientation:portrait) {
+		#blocksubmarine{
+		display: none;
+		background: none;
+		width: 100%;
+	}
+	.footer{
+		display: none;
+	}
+	#smartphone{
+		display: grid;
+		width: 100%;
+		height: 100%;
+		justify-items: center;
+		align-content: center;
+	}
+	#pic_smartphone{
+		width: 60%;
+	}
+}

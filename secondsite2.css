@@ -1,0 +1,835 @@
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+h3 { 
+	font:  bold 1.4em georgia, sans-serif ;
+	letter-spacing: 1px; 
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	//color: #B7A5DF;
+	}
+.footer  a:link { 
+			color: rgba(254, 209, 150, 1);
+	}
+.footer  a:visited { 
+		color: rgb(184, 144, 93);
+}
+.nav  a:link { 
+	color: rgba(199, 23, 23, 1);
+}
+.nav  a:visited { 
+	color: rgb(128, 18, 18);
+}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: rgba(199, 23, 23, 1);
+	}
+.footer a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: rgba(254, 209, 150, 1);
+	}
+	
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: black;
+}	
+	
+b, .text p, .text_inside_slide{
+	font-size: 18px;
+	font-family: arial;
+	letter-spacing: 1pt;
+	word-spacing: 3px;
+	text-align: justify;
+	float: none;
+	padding: 1% 3%;
+	line-height: 23px; 
+}
+
+#center_words{
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+}
+
+#center_words>h1{
+	margin:25px auto;
+}
+#center_words>p{
+	margin: 0 auto;
+	color: white;
+	text-align-last: center;
+}
+
+.textblock p:first-letter{
+	color: red;
+	text-transform: uppercase;
+}
+
+.textblock{
+	background-color: rgba(254, 209, 150, 1);
+	width: 100%;
+	position: relative;
+	padding: 2% 0;
+}
+
+.text{
+	width: 90%;	
+	z-index: 10;
+	float: none;
+	margin: 0 auto;
+	padding-bottom: 2%;
+}
+
+.infblock{
+	
+	/* margin: 0 auto; */
+	z-index: 1;
+	margin: 200px auto 300px auto;
+	width: 90%;
+}
+
+#infblock_first_1{
+	margin-top: 70%;
+}
+
+.slideText, .h3intextblock{
+	position: relative;
+
+	width: 92%;
+	color: rgba(199, 23, 23, 1);
+	font-size: 34px;
+}
+
+.row_aside{	
+	background-color: rgba(66, 89, 83, 0.7);
+	width: 20%;	
+	height: calc(100%);
+	position: fixed;
+	top: 0;
+}
+
+#row_aside_block0{
+	right: 0;
+	z-index: -7;
+}
+
+#row_aside_block1{
+	left: 0;
+	z-index: -7;
+}
+
+#row_aside_block2{
+	top: 72pt;
+	position: fixed;
+	margin: 0 auto;
+	height: calc(100%);
+	left: 10%;
+	width: 80%;
+	z-index: -8;
+	background-color: rgba(155, 154, 124, 1);
+}
+
+.article{
+	position: relative;
+	top: 72pt;
+	margin: 0 auto;
+	
+	z-index: 50;
+
+}
+
+#submarine_next{
+	padding: 1%;
+	background-color:rgba(41, 70, 74, 0.9);
+	top:0;
+	position: absolute;
+	color: white;
+	border-radius: 0 0 50% 0;
+}
+
+hr{
+	height: 5px;
+	//width: 100%;
+	background-color: black;
+	margin: 40px 0;
+	//position: relative;
+}
+
+.article:after{
+	background-color: rgba(66, 89, 83, 0.7);
+	width: 20%;	
+	height: 100%;
+	position: absolute;	
+	z-index: 10;
+	right: 0;
+	display:block;
+}
+
+/*вылезающий подсписок*/
+
+
+.navnavnav{
+	background-color: rgba(224, 192, 142, 0.8);
+}
+
+.nav button{
+	background: linear-gradient(0deg, rgb(249, 217, 174), rgb(234, 136, 136) 45%, rgb(254, 209, 150) 100%);
+    background-color: rgba(242, 81, 52, 0.7);	
+}
+
+.nav span{    
+    color: rgba(199, 23, 23, 1);
+}
+
+.navnav>li:hover button{
+    background: rgba(226, 180, 138, 0.925);
+}
+
+.blocknav{
+	background-color: rgba(224, 192, 142, 0.9);
+}
+
+a li{
+	margin:15px;
+}
+
+.nav>li:hover ul{
+	background-color: rgba(41, 70, 74, 0.74);
+}
+
+.nav>li:hover {
+	background-color:#696969;
+}
+
+
+/*подвал в коммонкод*/
+
+
+.footer *{
+	margin: 1%;
+	
+}
+.infblock_past{
+	MARGIN-bottom: 30%;
+}
+
+.blockfooter{
+	
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 72pt;	
+}
+/*преолайдер*/
+
+
+/*супер пупер слово, вылезающее при наведении*/
+#superword_fun{
+	text-transform: uppercase;
+	position: relative;
+	font-size: 100px;
+	color: transparent;
+	z-index: 15;
+	height: 120px;
+	width: 250px;
+	margin: 0 auto;
+	
+}
+
+#superword_fun span:nth-child(1){
+	position: absolute;
+	left: 0%;
+	margin: 0 auto;
+	transform: 0.5s;
+	color:  white;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+	overflow: hidden;
+	margin: 0 auto;
+}
+#superword_fun span:nth-child(2){
+	position: absolute;
+	left: 0%;
+	transform: 0.5s;
+	color: white;
+	clip-path: polygon(0 50%, 99% 50%, 100% 100%, 0 100%);
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#superword_fun span:nth-child(3){
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%) scaleY(0);
+	left: ;
+	width: 250px;
+	font-size: 24px;
+	transition: 0.5s;
+	text-align: center;
+	//background-color: #000;
+}
+
+#superword_fun:hover span:nth-child(1) {
+	transform: translateY(-18px);
+	transition: 0.5s;
+}
+
+#superword_fun:hover span:nth-child(2) {
+	transform: translateY(18px);
+	transition: 0.5s;
+}
+
+#superword_fun:hover span:nth-child(3) {
+	transform: translateY(-50%) scaleY(1);
+	color: #000;
+}
+
+.mark_submarine a{
+	display:block;
+	background-color:#232970;
+	border-radius:50%;
+	width: 10pt;
+	height: 10pt;
+	
+}
+
+	#start_way{
+		position:absolute;
+		top:37%;
+		left:87%;
+	}
+
+	#Hunting_on_Crespo_Island{
+		position:absolute;
+		top: 39%;
+		left: 92.5%;
+		animation-delay: 2s;
+	}
+
+	#the_Nautilus_is_attacked_by_natives{
+		position:absolute;
+		top: 64%;
+		left: 91.5%;
+		animation-delay: 1s;
+	}
+
+	#Pearls_in_the_Manar_Bay{
+		position:absolute;
+	    top: 53%;
+		left: 70%;
+		animation-delay: 2s;
+	}
+
+	#Found_Atlantis{
+		position:absolute;
+		top: 51%;
+		left: 38.5%;
+		animation-delay: 1s;
+	}
+
+	#fight_with_octopuses{
+		position:absolute;
+		top: 42%;
+		left: 21%;
+		animation-delay: 3s;
+	}
+
+	#Fight_with_the_avenger_a_British_ship{
+		position:absolute;
+		top:27%;
+		left:31.5%;
+		animation-delay: 1s;
+	}
+
+	#freeing_friends_from_Nautilus{
+		position:absolute;
+	    top: 12%;
+		left: 49%;
+		animation-delay: 2s;
+	}
+
+.map_map_map{
+	position: absolute;
+    left: 5%;
+	z-index: 100;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.way_map{
+	width: 100%;
+}
+.mark_submarine a {
+	/*Сделать более выразительными жти точки*/
+	animation: mark_submarine 3s infinite ;
+	
+}
+@keyframes mark_submarine{
+		0%{
+			filter:drop-shadow(1px 1px 1px black) invert(0%);
+		}
+		50%{
+			filter:drop-shadow(16px 16px 10px black) invert(100%);
+		}
+		100%{
+			filter:drop-shadow(1px 1px 1px black) invert(0%);
+		}
+}
+
+.map p{
+	display:none;
+	position: absolute;
+	
+	background-color:white;
+	padding:15px;
+	/* margin: 8% 0; */
+	border:solid 5px  #DEB887;
+	opacity: .9;
+}
+
+.mark_submarine a:hover p{
+	display:block;
+}
+
+/* .usual_pic:hover{ */
+	/* width: 100%; */
+/* } */
+
+.usual_pic{
+	position: relative;
+	object-fit: contain;
+    margin: 0 auto;
+	position: relative;
+	width: 50%;
+}
+#float_left{
+	float: left;	
+	margin: 1% 4% 0 0;
+}
+
+.infblock:nth-of-type(odd) .usual_pic{
+	left: -0.5%;
+	bottom: 40%;
+	float: left;
+	padding: 3% 3% 3% 0;
+}
+
+.infblock:nth-of-type(even) .usual_pic{
+	right: -0.5%;
+	bottom: 50%;
+	float: right;
+	padding: 3% 0% 3% 3%;
+}
+
+
+
+.footer{
+	bottom: 0%;		
+}
+
+.fit_pic{
+	width: auto;
+	max-height: 500px;
+}
+
+.octopus2{
+	display: none;
+}
+
+.octopus1{
+	display: block;
+}
+
+#film_chronology{
+	position: relative;
+	display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+	min-width: 370px;
+	margin: 5% auto;
+	width: 90%;
+	z-index: 10;
+}
+.line_aside{
+	position: absolute;
+	height: 25%;
+	width: 5px;
+	background-color: 425953;
+	z-index: -5;
+}
+
+#film_chronology b{
+	display: flex;
+	text-align: center;
+	margin: 15px;
+}
+
+#line_chronology1:after{
+	position: absolute;
+	left: 0;
+	top:-18px;
+	clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+	width: 60px;
+	height: 40px;
+	background-color: F25134;
+	display: block;
+	border: 2 px solid black;
+	content:"";
+	z-index: -5;
+}
+
+#line_chronology2:after{
+	position: absolute;
+	left: 0;
+	top:-18px;
+	clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+	width: 60px;
+	height: 40px;
+	background-color: F25134;
+	display: block;
+	content:"";
+}
+
+#line_chronology7{
+	top: 66%;
+	right: 0;
+}
+
+.blocks_chronology p{
+	display: none;
+	position: absolute;
+	background-color: #e0c08ee6;
+	border: solid #425953b3 5px;
+	border-radius: 5%;
+	padding: 2%;
+	z-index: 1000;
+	max-width: 350px;
+	font-size: 18px;
+    font-family: arial;
+    letter-spacing: 1pt;
+    word-spacing: 3px;
+    text-align: justify;
+}
+
+.chronologi_pic{
+	padding-top: 5%;
+}
+
+.blocks_chronology:hover p{
+	display: block;
+}
+
+.blocks_chronology{
+	
+	min-width: 100px;
+	min-height: 100px;
+	background-color: E0C08E;
+	margin: 15px 3% ;	
+	border-radius: 5%;
+}
+
+.line_chronology{
+	position: absolute;
+	z-index: -5;
+	width: 100%;
+	height: 5px;
+	background-color: F25134;
+}
+
+#line_chronology1{
+	
+	top: 15%;
+	right: 0;
+}
+
+#line_chronology2{
+	
+	top: 64%;
+	right: 0;
+}
+
+#line_chronology3{ 
+	top: 40%;
+	right: 0;
+}
+
+#line_chronology4{
+	right: 0;
+	top: 15%;
+}
+#line_chronology5{
+	left: 0;
+	top: 40%;
+}
+
+#line_chronology6{
+	left: 0;
+	top: 90%;
+}
+.blocks_chronology:first-child{
+	width: 25%;
+}
+
+.blocks_chronology:hover p{
+	display:block;
+}
+
+.script_hendheld{
+	display: none;
+}
+#move_block{
+	animation: move 10s linear 1;
+	width: 40px;
+	height: 40px;
+	/* background: hotpink; */
+	border-radius: 50%;
+	position: fixed;
+	left: 0%;
+}
+
+@keyframes move {
+  0% { 
+    offset-distance: 0%;
+	top: 90%;
+	z-index: 999;
+  }
+  100% { 
+    offset-distance: 100%;
+	z-index: 0;
+	top: 10%
+  }
+}
+
+/*про слайдер*/
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    /* height: 300px; */
+    border: none !important;
+    box-shadow: none !important;
+}
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slideText_nautilius{
+	color: #fff;
+    font-size: 35px;
+	text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+.slider .prev{
+	left: 0px;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.slider-dots {
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+.slider_text{
+	max-width: 90%;
+	margin: auto 10%;
+}
+.slider{
+    
+    position: relative;
+    
+    /* min-height: 100%; */
+    margin-bottom: 15px;
+	border: 10px groove #d21717;
+}
+.item p{
+	padding: 0 6% 6% 6%;
+}
+.item .slideText{
+	padding: 3%;
+}
+
+@media all and (max-width: 580px){
+	
+	
+	#line_chronology3{ 
+		display: block;
+		top: 83%;
+		right: 0;
+	}
+	#line_chronology1{	
+		top: 16%;
+		right: 0;
+	}
+
+	#line_chronology2{
+		top: 49%;
+		right: 0;
+	}
+	.slider {
+		
+		width: 100%;
+		margin: 0 auto;
+	}
+	.slider .prev, .slider .next {
+		font-size: 15px;
+	}
+	.way_map {
+		width: 100%;
+		
+	}
+	#infblock_first_1 {
+		margin-top: 80%;
+	}
+	.map_map_map {	    
+		left: -12%;
+	}
+	#nav_button1{
+		display: block;
+	}
+	
+}
+
+@keyframes wave-before {
+    0% {
+        border-radius: 25%;
+        left: 44px;
+		transform: translateX(54px);
+    }
+    100% {
+        border-radius: 50%;
+        left: 30px;
+		transform: translateX(48px);
+    }
+}
+
+
+
+@media all and (max-width: 1300px){
+	.tall_pic {
+		width: 100%;	
+	}
+	
+	.usual_pic{
+		width: 100%;	
+		object-fit: contain;
+		margin: 0 auto;
+		position: none;
+		float: none;
+	}
+	.map_map_map{
+		width: 100%;
+		left: 0;
+		margin-right: 105%;
+	}
+		.tall_pic{
+		max-width: 700px;
+	}
+
+	#line_chronology1{
+		top: 12%;
+		right: 0;
+	}
+	#line_chronology2 {
+    top: 64%;
+    right: 0;
+}
+	#line_chronology4 {
+    right: 0;
+    top: 13%;
+}
+#line_chronology3 {
+    top: 38%;
+    right: 0;
+}
+#line_chronology5 {
+    left: 0;
+    top: 39%;
+}
+#line_chronology6{
+	display: block;
+	top: 88%;
+	left:0;
+}
+#line_chronology7{
+	display: block;
+	top: 64%;
+    left: 100%;
+}	
+}
+
+@media (max-width: 800px){
+	
+	.infblock img{
+		margin: 3% 0;
+	}
+	
+	.nav>ul{
+		background-color: rgba(254, 209, 150, 0.8);
+	}
+}
+
+
+
+
+@media all and (max-width: 1320px){
+
+
+}
+
