@@ -1,3 +1,7 @@
+* {
+	font-family: Trebuchet MS, sans-serif;
+}
+
 .navnavnav{
 	display:none;
 	width: 300px;
@@ -247,7 +251,7 @@ a li{
 	border: solid aqua;
 	/* font-size: large; */
 	padding: 2px 10px ;
-	font:  normal 1.4em  georgia, sans-serif;
+	/* font:  normal 1.4em  georgia, sans-serif; */
 	color:rgb(112, 206, 206);
 }
 
