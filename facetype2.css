@@ -1,7 +1,6 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: Trebuchet MS, sans-serif;
 }
 body{
 	background-color: black;
@@ -47,7 +46,7 @@ a:hover, a:focus, a:active {
 .nav button{
     background-color: rgba(139, 195, 202, 1);	
 }
-
+	
 .navnav>li:hover button{
     background-color: rgba(139, 195, 202, 1);
 }
@@ -69,9 +68,9 @@ a:hover, a:focus, a:active {
 .nav>li:hover {
 	background-color:#696969;
 }
-/* .what_is_this_page{
+.what_is_this_page{
 	background-color: black;
-} */
+}
 .i_want_refuse_color>img:hover{
 	filter: contrast(100%)  invert(75%) sepia(600%);
 	transition: 1.5s;

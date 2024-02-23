@@ -7,7 +7,7 @@
 		window.onload = function() {
 					setTimeout(function(){
 						document.querySelector('.preloader').classList.add("preloader-remove");
-					}, 2000);
+					}, 1800);
 				};
 			
 			
@@ -20,13 +20,12 @@
 
 	<body>
 		<div class="preloader">
-				<div class="loader">
-					<div class="loading"></div>
-					<div class="preloader__item"> <img src="pic/podvodnaja-lodka.png" id="submarina"/> </div>
-					<input value="пропустить анимацию" onclick="document.querySelector('.preloader').classList.add('preloader-remove');" type="button">
-				</div>	
-				<!-- <button id="skip_preolader"><b>пропустить анимацию</b></button> -->
-		</div>		
+			<div class="loader">
+				<div class="loading"></div>
+				<div class="preloader__item"> <img src="pic/podvodnaja-lodka.png" id="submarina"/> </div>
+				<input id="loader-button" value="пропустить анимацию" onclick="document.querySelector('.preloader').classList.add('preloader-remove');" type="button">
+			</div>	
+	</div>		
 			
 			<div class="row_aside" id="row_aside_block0">
 			</div>
@@ -44,14 +43,14 @@
 														
 									 <button  > 
 										<img class="nav_pic" src="pic/podvodnaja-lodka.png" data-easy-toggle="#categories" data-easy-class="open" data-easy-rcoe />
-											<a href="facetype2.html"> <span>Главная страница</span></a>
+											<a href="index.html"> <span>Главная страница</span></a>
 										  
 									 </button>
 									
 								
 									<ul class="navnavnav" id="ulcharecters">
 									
-										<a href="facetype2.html"> <span>ссылка на страницу с большой подлодкой</span> </a>	
+										<a href="index.html"> <span>ссылка на страницу с большой подлодкой</span> </a>	
 										
 									</ul>
 								</li>
@@ -316,18 +315,18 @@
 				</div>
 				<div class="blockfooter">
 					<Div class="footer">
-						<h3>Мой профиль ВКонтакте:</h3>
+						<h3>Мой профиль ВКонтакте</h3>
 						<a href="https://vk.com/rima_amir"><img src="pic/image-vk-removebg-preview.png"/></a>
-						<h3>Ссылки на источники:</h3>
+						<h3>Ссылки на источники</h3>
 						<ul class="listfooter">
-							<li><a href="https://www.scribblemaps.com/maps/view/20000_Leagues_Under_the_Sea_/fzigci_Uil" >Сюжет на карте</a></li>
-							<li><a href="https://infourok.ru/proekt-po-sledam-geroev-knigi-zhverna-dvadcat-tisyach-le-pod-vodoy-2434180.html" >Проект ппо географии про путь Наутилиуса</a></li>
+							<li><a href="https://www.scribblemaps.com/maps/view/20000_Leagues_Under_the_Sea_/fzigci_Uil" >Карта с сюжетом</a></li>
+							<li><a href="https://infourok.ru/proekt-po-sledam-geroev-knigi-zhverna-dvadcat-tisyach-le-pod-vodoy-2434180.html" >Школьный проект о пути Наутилиуса</a></li>
+							<li><a href="" >ссылка 3</a></li>
 						</ul>
 				
 
 					</Div>
 				</div>	
-
 					<!--<div class="infblock">
 						<div class="textblock">
 							<h3 class="h3intextblock"></h3>

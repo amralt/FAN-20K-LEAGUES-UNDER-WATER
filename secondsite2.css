@@ -2,6 +2,7 @@
 *{
 	padding: 0;
 	margin: 0;
+	font-family:'georgia', 'sans-serif';
 }
 
 h3 { 
@@ -11,7 +12,6 @@ h3 {
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
-	//color: #B7A5DF;
 	}
 .footer  a:link { 
 			color: rgba(254, 209, 150, 1);
@@ -42,7 +42,6 @@ a:hover, a:focus, a:active {
 	
 b, .text p, .text_inside_slide{
 	font-size: 18px;
-	font-family: arial;
 	letter-spacing: 1pt;
 	word-spacing: 3px;
 	text-align: justify;
@@ -155,10 +154,10 @@ b, .text p, .text_inside_slide{
 
 hr{
 	height: 5px;
-	//width: 100%;
+	/* //width: 100%; */
 	background-color: black;
 	margin: 40px 0;
-	//position: relative;
+	/* //position: relative; */
 }
 
 .article:after{
@@ -267,12 +266,12 @@ a li{
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%) scaleY(0);
-	left: ;
+	/* left: ; */
 	width: 250px;
 	font-size: 24px;
 	transition: 0.5s;
 	text-align: center;
-	//background-color: #000;
+	/* //background-color: #000; */
 }
 
 #superword_fun:hover span:nth-child(1) {
@@ -668,7 +667,7 @@ a li{
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 1.6s;
 }
 @-webkit-keyframes fade {
     from {

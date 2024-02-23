@@ -2,18 +2,16 @@
 	<head>
 		<link href="facetype2.css" rel="stylesheet">
 		<link href="common_cod.css" rel="stylesheet">
+		<link rel="icon" href="pic/podvodnaja-lodka.png" type="image/x-icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<script>
 				window.onload = function() {
 					setTimeout(function(){
 						document.querySelector('.preloader').classList.add("preloader-remove");
-					}, 3000);
+					}, 2000);
 				};
-			
-			
-			
-			
+		
 		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -24,7 +22,7 @@
 				<div class="loader">
 					<div class="loading"></div>
 					<div class="preloader__item"> <img src="pic/podvodnaja-lodka.png" id="submarina"/> </div>
-					<input value="пропустить анимацию" onclick="document.querySelector('.preloader').classList.add('preloader-remove');" type="button">
+					<input id="loader-button" value="пропустить анимацию" onclick="document.querySelector('.preloader').classList.add('preloader-remove');" type="button">
 				</div>	
 		</div>		
 			<Div class="header">
@@ -39,14 +37,14 @@
 														
 									 <button  > 
 										<img class="nav_pic" src="pic/podvodnaja-lodka.png" data-easy-toggle="#categories" data-easy-class="open" data-easy-rcoe />
-											<a href="facetype2.html"> <span>Главная страница</span></a>
+											<a href="index.html"> <span>Главная страница</span></a>
 										  
 									 </button>
 									
 								
 									<ul class="navnavnav" id="ulcharecters">
 									
-										<a href="facetype2.html"> <li  class="what_is_this_page">ссылка на начальную страницу</li> </a>	
+										<a href="index.html"> <span  class="what_is_this_page">ссылка на страницу с большой подлодкой</span> </a>	
 										
 									</ul>
 								</li>
@@ -61,7 +59,7 @@
 									
 								
 									<ul class="navnavnav" id="ulcharecters">
-										<a href="person.html"> <li  class="what_is_this_page">ссылка на страницу</li> </a>	
+										<a href="person.html"> <span  class="what_is_this_page">ссылка на страницу</span> </a>	
 										<a href="person.html#Nemo"><li>Капитан Немо</li></a>
 										<a href="person.html#Ned_Lend"><li>Нед Ленд</li></a>
 									</ul>
@@ -75,7 +73,7 @@
 									 </button>
 								
 									<ul class="navnavnav">
-										<a href="secondsite_way.html"> <li  class="what_is_this_page">ссылка на страницу</li> </a>	
+										<a href="secondsite_way.html"> <span  class="what_is_this_page">ссылка на страницу</span> </a>	
 										
 										<a href="secondsite_way.html#hunting_on_the_islend"><li>Охота на острове Креспо</li></a>
 										<a href="secondsite_way.html#natives"><li>На наутилиус нападают туземцы в Торресовом проливе </li></a>
@@ -94,7 +92,7 @@
 									</button>
 								
 									<ul class="navnavnav">
-										<a href="secondsite_nautilius.html"> <li  class="what_is_this_page">ссылка на страницу</li> </a>	
+										<a href="secondsite_nautilius.html"> <span  class="what_is_this_page">ссылка на страницу</span> </a>	
 										<a href="secondsite_nautilius.html#about_name"><li>смысл названия подводной лодки </li></a>
 										<a href="secondsite_nautilius.html#nautilius_how_this_made"><li>Устройство Наутилиуса</li></a>
 										<a href="secondsite_nautilius.html#nautilius_and_new_submarine"><li>Куда стремиться:</li></a>
@@ -110,7 +108,7 @@
 									 </button>
 								
 									<ul class="navnavnav" id="ulOthers_films">
-										<a href="film.html"> <li>ссылка на страницу</li> </a>	
+										<a href="film.html"> <span>ссылка на страницу</span> </a>	
 										<a href="film.html#anime"><li>Nadia: The Secret of Blue Water</li></a>
 										<a href="film.html#old_film"><li>Двести миль под водой, или Кошмар рыболова</li></a>
 										<a href="film.html#ussr_film"><li>Капитан Немо - советский фильм 1975г </li></a>
@@ -187,7 +185,7 @@
 		
 		
 			<Div class="footer">
-				<h3>Мой профиль ВКонтакте:</h3>
+				<h3>Мой профиль ВКонтакте</h3>
 				<a class="i_want_refuse_color" href="https://vk.com/rima_amir"><img  src="pic/image-vk-removebg-preview.png"/></a>
 				<h3>Ссылки на источники</h3>
 				<ul class="listfooter">

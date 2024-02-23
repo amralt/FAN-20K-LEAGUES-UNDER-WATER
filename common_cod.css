@@ -1,7 +1,3 @@
-*{
-	font-family: Trebuchet MS, sans-serif;
-}
-
 .navnavnav{
 	display:none;
 	width: 300px;
@@ -38,14 +34,14 @@
 }
 
 #nav_button1{
-	display: block;
+	display: none;
 }
 
 .nav button{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: block;
+    border: none;
 	background-position: 0;
     height: 72pt;
     width: 120pt;
@@ -120,14 +116,6 @@ ul>li:hover .nav_pic{
 a li{
 	margin:15px;
 }
-
-.nav>li:hover ul{
-	/* background-color: rgba(41, 70, 74, 0.74); */
-}
-
-.nav>li:hover {
-	/* background-color:#696969; */
-}
 /*преолайдер*/
 .preloader-remove{
 	display: none;
@@ -189,12 +177,13 @@ a li{
 @keyframes ocean {
     0% {
         top: 0;
+		background: rgba(38, 198, 218, 1);;
     }
-	90%{
-		background: #26C6DA;
+	80%{
+		background: rgba(38, 197, 218, 0.8);
 	}
     100% {
-		background: transparent;
+		background: rgba(38, 197, 218, 0.4);
     }
 }
 
@@ -215,7 +204,7 @@ a li{
 
 #submarina{
 	width: 250px;
-	animation: submarina_move 2.5s 1 ease-in;
+	animation: submarina_move 1s 1 ease-in;
 	animation-fill-mode:forwards;
 }
 
@@ -224,7 +213,7 @@ a li{
     left: 0px;
     width: 35%;
     height: 10%;
-    animation: ocean 0.5s infinite alternate ease-in-out;
+    animation: ocean 3s infinite alternate ;
 	background: #26C6DA;
 	width: 100%;
 	height: 100%;
@@ -241,13 +230,25 @@ a li{
     height: 240px;
     border-radius: 50%;
     border: 3px solid transparent;
+	animation: ocean 1.5;
     border-bottom-color: #0097A7;
     box-sizing: border-box;
 	z-index: 15;
 }
 
 .preloader{
-	 background: #26C6DA;
+	background: #26C6DA;
+}
+
+#loader-button {
+	background-color: #0097A7;
+	border-radius: 50px;
+	border-color: aqua aqua;
+	border: solid aqua;
+	/* font-size: large; */
+	padding: 2px 10px ;
+	font:  normal 1.4em  georgia, sans-serif;
+	color:rgb(112, 206, 206);
 }
 
 .loading {
@@ -261,7 +262,6 @@ a li{
 .loading:before {
     position: absolute;
     content: "";
-    displsy: block;
     top: -3px;
 }
 
@@ -281,7 +281,7 @@ a li{
 	width: 25%;
 	height: 10%;
 	border: 5px solid #ff4747;
-	background-color: #3ef4f9c4;
+	/* background-color: #3ef4f9c4; */
 	border-radius: 10%;
 }
 #skip_preolader:hover .preloader{
