@@ -460,7 +460,7 @@ a li{
 	position: absolute;
 	height: 25%;
 	width: 5px;
-	background-color: 425953;
+	background-color: #425953;
 	z-index: -5;
 }
 
@@ -477,7 +477,7 @@ a li{
 	clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
 	width: 60px;
 	height: 40px;
-	background-color: F25134;
+	background-color: #F25134;
 	display: block;
 	border: 2 px solid black;
 	content:"";
@@ -491,7 +491,7 @@ a li{
 	clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
 	width: 60px;
 	height: 40px;
-	background-color: F25134;
+	background-color: #F25134;
 	display: block;
 	content:"";
 }
@@ -529,7 +529,7 @@ a li{
 	
 	min-width: 100px;
 	min-height: 100px;
-	background-color: E0C08E;
+	background-color: #E0C08E;
 	margin: 15px 3% ;	
 	border-radius: 5%;
 }
@@ -539,7 +539,7 @@ a li{
 	z-index: -5;
 	width: 100%;
 	height: 5px;
-	background-color: F25134;
+	background-color: #F25134;
 }
 
 #line_chronology1{
